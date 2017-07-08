@@ -9,6 +9,7 @@ import Grid4      from './Grid4.vue'
 Vue.use(VueRouter);
 
 const routes = [
+  { path: '/', component: Grid1 },
   { path: '/grid1', component: Grid1 },
   { path: '/grid2', component: Grid2 },
   { path: '/grid3', component: Grid3 },
