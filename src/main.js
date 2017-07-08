@@ -1,12 +1,14 @@
 import Vue        from 'vue'
 import VueRouter  from 'vue-router'
 import App        from './App.vue'
+import FilterBar  from './FilterBar.vue'
 import Grid1      from './Grid1.vue'
 import Grid2      from './Grid2.vue'
 import Grid3      from './Grid3.vue'
 import Grid4      from './Grid4.vue'
 
 Vue.use(VueRouter);
+Vue.component('filter-bar', FilterBar);
 
 const routes = [
   { path: '/', component: Grid1 },

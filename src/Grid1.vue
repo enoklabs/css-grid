@@ -1,8 +1,8 @@
 <template>
   <div id="Grid1">
 
-
     <h1>Grid 1</h1>
+    <filter-bar></filter-bar>
 
     <div class="container">
 
