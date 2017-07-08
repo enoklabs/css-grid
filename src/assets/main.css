@@ -28,29 +28,6 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li:not(:last-child) {
-  margin-right: 20px;
-}
-
-nav a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 .container, header, .filter-bar {
   max-width: var(--site-width);
   margin: 10px auto;
