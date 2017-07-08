@@ -1,8 +1,8 @@
 <template>
   <div id="Grid1">
 
-    <h1>Grid 1</h1>
-    <filter-bar></filter-bar>
+    <h1>{{title}}</h1>
+    <filter-bar :title="title"></filter-bar>
 
     <div class="container">
 
@@ -34,7 +34,15 @@
   </div>
 </template>
 
-
+<script>
+  export default {
+    data() {
+      return {
+        title: 'Grid Number 1'
+      }
+    }
+  }
+</script>
 
 <style lang="scss">
 

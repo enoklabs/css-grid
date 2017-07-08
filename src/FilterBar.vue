@@ -3,6 +3,8 @@
 
     <div class="filter-bar">
 
+      <h2 class="title">{{title}}</h2>
+
       <div class="range-slider">
         <input type="range" value="0" min="0" max="500">
         <span>0</span>
@@ -20,7 +22,9 @@
 
 
 <script>
-  export default {}
+  export default {
+    props: ['title']
+  }
 </script>
 
 
@@ -34,16 +38,24 @@
   }
 
   .range-slider,
-  .buttons {
+  .buttons,
+  .title {
     padding: 0 20px;
+    margin: 0;
+  }
+
+  .title {
+    flex: 5;
+    color: white;
+    text-align: left;
   }
 
   .range-slider {
-    flex: 1;
+    flex: 2;
     text-align: left;
   }
   .buttons {
-    flex: 4;
+    flex: 1;
     text-align: right;
   }
 

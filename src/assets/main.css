@@ -17,6 +17,12 @@ body {
   margin: 0;
 }
 
+input[type="range"]:focus,
+button:focus {
+    border: none !important;
+    outline: none !important;
+}
+
 h1, h2, h3 {
   margin-top: 0;
   text-transform: uppercase;
