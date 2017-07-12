@@ -19,7 +19,7 @@
     }
 
     .buttons {
-        flex: 1;
+        width: 90px;
         text-align: right;
     }
 
@@ -150,12 +150,19 @@
             <span class="slider-label">grid-gap: <b>{{sliderValue}}</b> </span>
 
             <!-- Range Slider with default settings -->
-            <range-slider class="slider" min="0" max="20" step="1" v-model="sliderValue" @input="changeGap">
+            <range-slider
+                class="slider"
+                min="0"
+                max="30"
+                step="1"
+                v-model="sliderValue"
+                @input="changeGap"
+            >
             </range-slider>
 
             <div class="buttons">
-                <button><i class="fa fa-th"></i></button>
-                <button><i class="fa fa-th-list"></i></button>
+                <button v-on:click="toggleGrid"><i class="fa fa-th"></i></button>
+                <button v-on:click="toggleFullwidth"><i class="fa fa-th-list"></i></button>
             </div>
 
         </div>
@@ -173,10 +180,10 @@
     import RangeSlider from 'vue-range-slider'
 
     export default {
-        props: ['title', 'gap'],
+        props: ['title'],
         data: function() {
             return {
-                sliderValue: 5
+                sliderValue: 30,  // set default value
             }
         },
         components: {
@@ -184,9 +191,14 @@
         },
         methods: {
             changeGap() {
-
                 // Find the '--grid-gap' css variable and update it to sliderValue
-                document.documentElement.style.setProperty('--grid-gap', this.sliderValue + 'px');
+                document.documentElement.style.setProperty('--grid-4-gap', this.sliderValue + 'px');
+            },
+            toggleFullwidth() {
+              document.getElementById('grid-4').classList.add("fullwidth");
+            },
+            toggleGrid() {
+              document.getElementById('grid-4').classList.remove("fullwidth");
             }
         }
     }
