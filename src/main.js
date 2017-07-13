@@ -10,6 +10,7 @@ import Grid4      from './Grid4.vue'
 Vue.use(VueRouter);
 Vue.component('filter-bar', FilterBar);
 
+// declare routes
 const routes = [
   { path: '/', component: Grid1 },
   { path: '/grid1', component: Grid1 },
@@ -18,8 +19,10 @@ const routes = [
   { path: '/grid4', component: Grid4 }
 ];
 
+// start a new router with the routes
 const router = new VueRouter({routes});
 
+// initiate new vue app
 new Vue({
   el: '#app',
   router,

@@ -1,5 +1,6 @@
 <style lang="scss">
 
+    // styling for header and navigation links 
     header {
         display: flex;
         align-items: center;
@@ -23,6 +24,7 @@
 
 
 
+
 <template>
 
     <div id="app">
@@ -31,6 +33,7 @@
     </div>
 
 </template>
+
 
 
 

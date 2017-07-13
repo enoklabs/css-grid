@@ -1,36 +1,27 @@
 <style lang="scss">
 
-    .grid {
+    /* Default grid styles */
+    .grid--1{
         display: grid;
         grid-gap: 10px;
         div {
             background-color: white;
-            padding: 10px;
+            padding: 30px;
             word-break: break-all;
-        }
-    }
-
-    /* For medium devices */
-    @media only screen and (min-width: 500px) {
-        .grid--2 {
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: 50px;
         }
     }
 
     /* For large devices */
     @media only screen and (min-width: 900px) {
+
+
+        /********** GRID 1 **********/
         .grid--1 {
-            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 1fr 2fr 3fr;
         }
-        .grid--2 {
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 100px;
-        }
-        .fullwidth div {
-            grid-column-start: 2;
-            grid-column-end: -2;
-        }
+
+
     }
 
 </style>
@@ -47,27 +38,24 @@
 
         <div class="container">
 
-            <div class="grid grid--1">
-                <div>Side Left</div>
-                <div>
-                    <h4>Main Content</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sapiente harum eligendi porro sequi corrupti, repellat, quisquam, ipsam delectus ipsa mollitia, commodi voluptates quod dolor quos recusandae molestias quae aperiam!</div>
-                <div> Side Right</div>
-            </div>
 
-            <div class="grid grid--2">
+            <!-- grid sample 1 -->
+            <div class="grid grid--1">
                 <div>1 fraction</div>
+                <div>2 fraction</div>
+                <div>3 fraction</div>
+
                 <div>1 fraction</div>
+                <div>2 Fraction</div>
+                <div>3 fraction</div>
+
                 <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
-                <div>1 fraction</div>
+                <div>2 Fraction</div>
+                <div>3 Fraction</div>
             </div>
+            <!-- End grid wrapper -->
+
+
         </div>
     </div>
 
