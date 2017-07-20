@@ -192,13 +192,13 @@
         methods: {
             changeGap() {
                 // Find the '--grid-gap' css variable and update it to sliderValue
-                document.documentElement.style.setProperty('--grid-4-gap', this.sliderValue + 'px');
+                document.documentElement.style.setProperty('--grid-5-gap', this.sliderValue + 'px');
             },
             toggleFullwidth() {
-              document.getElementById('grid-4').classList.add("fullwidth");
+              document.getElementById('grid-5').classList.add("fullwidth");
             },
             toggleGrid() {
-              document.getElementById('grid-4').classList.remove("fullwidth");
+              document.getElementById('grid-5').classList.remove("fullwidth");
             }
         }
     }

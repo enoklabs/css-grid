@@ -6,6 +6,7 @@ import Grid1      from './Grid1.vue'
 import Grid2      from './Grid2.vue'
 import Grid3      from './Grid3.vue'
 import Grid4      from './Grid4.vue'
+import Grid5      from './Grid5.vue'
 
 Vue.use(VueRouter);
 Vue.component('filter-bar', FilterBar);
@@ -16,7 +17,8 @@ const routes = [
   { path: '/grid1', component: Grid1 },
   { path: '/grid2', component: Grid2 },
   { path: '/grid3', component: Grid3 },
-  { path: '/grid4', component: Grid4 }
+  { path: '/grid4', component: Grid4 },
+  { path: '/grid5', component: Grid5 }
 ];
 
 // start a new router with the routes

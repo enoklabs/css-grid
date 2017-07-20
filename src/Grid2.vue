@@ -48,57 +48,7 @@
 
             <!-- grid sample 2 -->
             <div class="grid wrapper grid--2">
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
-                <div>1 fr</div>
+                <div v-for="n in 48">1 fr</div>
             </div> <!-- End grid wrapper -->
 
         </div>

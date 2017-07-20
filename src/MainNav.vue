@@ -40,6 +40,7 @@
                 <li><a href="#/grid2">Grid 2</a></li>
                 <li><a href="#/grid3">Grid 3</a></li>
                 <li><a href="#/grid4">Grid 4</a></li>
+                <li><a href="#/grid5">Grid 5</a></li>
             </ul>
 
         </header>
