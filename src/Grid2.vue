@@ -65,7 +65,7 @@
     export default {
         data() {
             return {
-                title: 'Grid Number 2'
+                title: 'Repeat Function'
             }
         }
     }

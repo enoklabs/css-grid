@@ -87,7 +87,7 @@
     export default {
         data() {
             return {
-                title: 'Grid Number 3'
+                title: 'grid-column  &  grid-row'
             }
         }
     }

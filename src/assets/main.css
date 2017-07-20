@@ -29,7 +29,7 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-.container, header, .filter-bar {
+.container, .header, .filter-bar {
   max-width: var(--site-width);
   margin: 10px auto;
   color: #2c3e50;

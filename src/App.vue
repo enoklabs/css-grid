@@ -1,7 +1,7 @@
 <style lang="scss">
 
-    // styling for header and navigation links 
-    header {
+    // styling for header and navigation links
+    .header {
         display: flex;
         align-items: center;
         color: white;

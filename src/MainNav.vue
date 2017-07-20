@@ -30,17 +30,17 @@
 
     <div id="MainNav">
 
-        <header>
+        <header class="header">
             <div class="cssgrid">
                 <img src="src/assets/cssgrid.svg" alt="cssgrid">
             </div>
 
             <ul class="nav">
-                <li><a href="#/grid1">Grid 1</a></li>
-                <li><a href="#/grid2">Grid 2</a></li>
-                <li><a href="#/grid3">Grid 3</a></li>
-                <li><a href="#/grid4">Grid 4</a></li>
-                <li><a href="#/grid5">Grid 5</a></li>
+                <li><a href="#/grid1">Fractions</a></li>
+                <li><a href="#/grid2">Repeat Function</a></li>
+                <li><a href="#/grid3">Grid Template</a></li>
+                <li><a href="#/grid4">Grid Area</a></li>
+                <li><a href="#/grid5">Grid Gap</a></li>
             </ul>
 
         </header>
@@ -48,10 +48,3 @@
     </div>
 
 </template>
-
-
-
-
-<script>
-
-</script>

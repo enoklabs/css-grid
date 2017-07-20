@@ -1,33 +1,39 @@
 <style lang="scss">
 
     .wrapper--4 {
-        div {
-            background-color: white;
-            padding: 50px;
-            word-break: break-all;
-            text-align: left;
-        }
+        header, footer { padding: 40px; }
+        main, aside { padding: 150px; }
 
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 4px;
 
         // define the grid template: 2 columns, 3 rows
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+          "header header header header"
+          "main main main sidebar"
+          "footer footer footer footer";
+
+
+          header {
+            grid-area: header;
+            background-color: #B3E5FC;
+          }
+          main {
+            grid-area: main;
+            background-color: #F5F5F5;
+          }
+          aside {
+            grid-area: sidebar;
+            background-color: #D1C4E9;
+          }
+          footer {
+            grid-area: footer;
+            background-color: #FFF9C4;
+          }
     }
 
-    .cell-1 {
-      grid-column: 1 / 2;
-      grid-row: 1 / 4;
-    }
-    .cell-2 {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-    }
-    .cell-3 {
-      grid-column: 2 / 3;
-      grid-row: 2 / 4;
-    }
 
 
 </style>
@@ -44,18 +50,14 @@
         <div class="container">
 
 
-            <!-- grid sample 3 -->
+            <!-- grid sample 4 -->
             <div class="grid wrapper--4">
-                <div class="cell-1">
-                    <pre>
-                        .cell-1 {
-                          grid-column: 1 / 2;
-                          grid-row: 1 / 3;
-                        }
-                    </pre>
-                </div>
-                <div class="cell-2">cell .cell-2</div>
-                <div class="cell-3">cell .cell-3</div>
+
+                <header> Header  </header>
+                <main>   Main    </main>
+                <aside>  Sidebar </aside>
+                <footer> Footer  </footer>
+
             </div>
 
 
@@ -73,7 +75,7 @@
     export default {
         data() {
             return {
-                title: 'Grid Number 4'
+                title: 'Grid Area'
             }
         }
     }
