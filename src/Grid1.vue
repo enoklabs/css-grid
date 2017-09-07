@@ -70,7 +70,7 @@
     export default {
         data() {
             return {
-                title: 'Fractions'
+                title: 'Grid Fractions (fr)'
             }
         }
     }

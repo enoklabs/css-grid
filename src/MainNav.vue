@@ -38,9 +38,9 @@
             <ul class="nav">
                 <li><a href="#/grid1">Fractions</a></li>
                 <li><a href="#/grid2">Repeat Function</a></li>
-                <li><a href="#/grid3">Grid Template</a></li>
-                <li><a href="#/grid4">Grid Area</a></li>
-                <li><a href="#/grid5">Grid Gap</a></li>
+                <li><a href="#/grid3">Template</a></li>
+                <li><a href="#/grid4">Area</a></li>
+                <li><a href="#/grid5">Gap</a></li>
             </ul>
 
         </header>

@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Reference to the [CSS Grid Slides](https://docs.google.com/presentation/d/1aNMXS6B4qVU_DnOiQoGOejtDGFlyzyNiz6jbt7opzw0/edit?usp=sharing.

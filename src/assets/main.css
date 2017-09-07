@@ -16,6 +16,7 @@ body {
   text-align: center;
   color: white;
   margin: 0;
+  padding-bottom: 20%;
 }
 
 input[type="range"]:focus,
