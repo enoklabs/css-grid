@@ -7,25 +7,25 @@
         grid-gap: 4px;
 
         // define the grid template: 2 columns, 3 rows
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: 250px 1fr;
         grid-template-rows: 1fr 5fr 1fr;
         grid-template-areas:
-          "header header"
-          "main sidebar"
-          "footer footer";
+          "sidemenu header" //use the grid-area by it's name
+          "sidemenu main"
+          "sidemenu footer";
 
 
         header {
-          grid-area: header;
+          grid-area: header;  //declare the grid-area name
           background-color: #B3E5FC;
         }
         main {
           grid-area: main;
-          background-color: #F5F5F5;
+          background-color: #FFFFFF;
         }
         aside {
-          grid-area: sidebar;
-          background-color: #D1C4E9;
+          grid-area: sidemenu;
+          background-color: #dddddd;
         }
         footer {
           grid-area: footer;
@@ -54,7 +54,7 @@
 
                 <header> Header  </header>
                 <main>   Main    </main>
-                <aside>  Sidebar </aside>
+                <aside>  Side-Menu </aside>
                 <footer> Footer  </footer>
 
             </div>
